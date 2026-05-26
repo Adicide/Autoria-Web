@@ -1,0 +1,66 @@
+body{
+    background-color: rgb(210, 105, 30);
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-image: url(imgs/Faixa\ Branca\ Topo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header h1 a{
+    background-color: rgb(2, 148, 245);
+    color: white;
+    display: inline-block;
+    margin: 0 1rem;
+    padding: 1.5rem 2rem;
+    text-decoration: none;
+    border-radius: 3%;
+}
+
+header h1 a:hover{
+    color: rgb(3, 74, 167);
+    text-decoration: none;
+}
+
+header h1 a:visited{
+    color: rgb(2, 148, 245);
+    text-decoration: none;
+}
+
+header ol{
+    list-style-type: none;
+}
+
+header li{ 
+    margin: 1rem 2rem;
+    display: inline-block;
+}
+
+header li a{
+    background-color: rgb(2, 148, 245);
+    color: white;
+    display: inline-block;
+    margin: 0 1rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 3%;
+}
+
+header li a:hover{
+    color: rgb(3, 74, 167);
+    text-decoration: none;
+}
+
+header li a:visited{
+    color: rgb(2, 148, 245);
+    text-decoration: none;
+}
