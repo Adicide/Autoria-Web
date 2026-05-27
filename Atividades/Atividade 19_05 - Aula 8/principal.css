@@ -1,38 +1,45 @@
 body{
     background-color: rgb(210, 105, 30);
+    background-image: url(imgs/Triângulo\ dos\ Pereiras.png);
+    background-repeat: repeat-x repeat-y;
+    background-attachment: fixed;
     font-family: "Inter", sans-serif;
     margin: 0;
     padding: 0;
 }
 
 header{
-    background-image: url(imgs/Faixa\ Branca\ Topo.png);
+    background-color: white;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
     display: flex;
     width: 100%;
-    margin: 0;
-    box-sizing: border-box;
+    align-items: center;
 }
 
 header h1 a{
     background-color: rgb(2, 148, 245);
     color: white;
     display: inline-block;
-    margin: 0 1rem;
+    margin-left: 32px;
+    margin-right: 512px;
     padding: 1.5rem 2rem;
     text-decoration: none;
-    border-radius: 3%;
+    border-radius: 25px;
 }
 
-header h1 a:hover{
-    color: rgb(3, 74, 167);
+header h1 a:link{
+    color: white;
     text-decoration: none;
 }
 
 header h1 a:visited{
-    color: rgb(2, 148, 245);
+    color: white;
+    text-decoration: none;
+}
+
+header h1 a:hover{
+    color: rgb(209, 209, 209);
     text-decoration: none;
 }
 
@@ -41,7 +48,9 @@ header ol{
 }
 
 header li{ 
-    margin: 1rem 2rem;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
     display: inline-block;
 }
 
@@ -49,18 +58,67 @@ header li a{
     background-color: rgb(2, 148, 245);
     color: white;
     display: inline-block;
-    margin: 0 1rem;
-    padding: 1rem 2rem;
+    margin: 0;
+    padding: 1rem 1rem;
     text-decoration: none;
-    border-radius: 3%;
+    border-radius: 20px;
 }
 
-header li a:hover{
-    color: rgb(3, 74, 167);
+header li:link{
+    color: white;
     text-decoration: none;
 }
 
 header li a:visited{
-    color: rgb(2, 148, 245);
+    color: white;
     text-decoration: none;
+}
+header li a:hover{
+    color: rgb(209, 209, 209);
+    text-decoration: none;
+}
+
+.paragrafo_introducao{
+    background-color: rgb(156, 156, 167);
+    background-size: cover;
+    border-radius: 25px;
+    max-width: 400px;
+    margin-top: 64px;
+    margin-left: 32px;
+    padding: 1rem;
+}
+
+.bloco_titulos{
+    background-color:rgb(2, 148, 245);
+    background-size: cover;
+    border-radius: 25px;
+    color: white;
+    max-width: 400px;
+    margin-top: 80px;
+    margin-left: 32px;
+    padding: 1rem;
+}
+
+#outros_paragrafos{
+    background-color: rgb(156, 156, 167);
+    background-size: cover;
+    border-radius: 25px;
+    max-width: 400px;
+    margin-left: 32px;
+    padding: 1rem;
+}
+
+figure{
+    margin-top: 80px;
+}
+
+#listas{
+    background-color: wheat;
+    background-size: cover;
+    border-radius: 25px;
+    max-width: 400px;
+    margin-left: 32px;
+    padding: 1rem;
+    list-style: disc;
+    list-style-position: inside;
 }
