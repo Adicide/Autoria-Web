@@ -2,6 +2,7 @@ body{
     background-image: url(images/Foto\ Natal\ Ponte.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: "Inter", sans-serif;
     margin: 0;
     padding: 0;
@@ -61,24 +62,24 @@ header h1 a:visited{
     color: #2B87A7;
 }
 
-li a:link{
+ol li a:link{
     color: #007bff;
     text-decoration: none;
 }
 
-li a:hover{
+ol li a:hover{
     color: #ff8400;
 }
 
-li a:visited{
+ol li a:visited{
     color: #2B87A7;
 }
 
-li{
+ol li{
     display: inline-block;
 }
 
-li a{
+ol li a{
     background-color: white;
     display: flex;
     margin: 0.6rem;
@@ -92,16 +93,15 @@ li a{
     font-style: bold;
     font-size: 1.1rem;
     text-align: left;
+    justify-content: center;
+    align-items: center;
     background-color: white;
     background-size: auto;
     max-width: 44.5rem;
     color: #ff8400;
     border-radius: 1.5rem;
-    margin: 2rem;
-    margin-top: 2rem;
-    margin-left: 36.25rem;
-    justify-content: center;
-    align-items: center;
+    margin: 2rem auto;
+    margin-top: auto;
     padding: 1rem;
 }
 
@@ -111,10 +111,10 @@ li a{
 
 #simbolo_devopsdays{
     display: block;
-    max-width: 100%;
+    max-width: 480px;
     border-radius: 20px;
-    margin-top: 3rem;
-    margin-left: 34rem;
+    margin: 2rem auto;
+    margin-top: 5rem;
     margin-right: auto;
 }
 /* -------------- */
@@ -122,7 +122,8 @@ li a{
 /* Conjunto dos blocos azuis */
 .conjunto_blocos{
     display: flex;
-    margin-top: 7rem;
+    margin-top: 5rem;
+    margin-bottom: 4.5rem;
     justify-content: center;
 }
 /* -------------- */
@@ -190,20 +191,6 @@ li a{
 }
 /* -------------- */
 
-/* INFORMAÇÕES.HTML */
-
-/* Bloco da localização */
-.bloco_localizacao{
-    color: white;
-    background-color: #ff8400;
-    background-size: cover;
-    border-radius: 1.5rem;
-    width: auto;
-    padding: 1rem;
-    margin-bottom: 2.5rem;
-}
-/* -------------- */
-
 /* Rodapé */
 .rodape{ /* Bloco do rodapé */
     color: white;
@@ -215,11 +202,116 @@ li a{
     margin: 0; 
     margin-top: auto;
     padding: 1rem;
-    padding-top: 3rem;
     text-align: center;
 }
 
 #nome_bold{
     color: #007bff;
 }
-/*  */
+/* -------------- */
+
+
+/* INFORMAÇÕES.HTML */
+
+/* Bloco da localização */
+.container_localizacao{
+    margin-top: 6rem;
+    margin-bottom: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloco_localizacao{
+    text-align: left;
+    color: white;
+    background-color: #2D567E;
+    background-size: cover;
+    border-radius: 1.5rem;
+    width: auto;
+    max-width: 35rem;
+    padding: 1rem;
+    padding-top: 0.5rem;
+}
+
+#titulo_bloco_localizacao{
+    background-color: #ff8400;
+    background-size: cover;
+    border-radius: 1.5rem;
+    width: auto;
+    padding: 1rem;
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    max-width: 20rem;
+}
+
+.informacoes_do_bloco_localizacao{ /* Bloco branco interno com as informações*/
+    color: black;
+    background-color: white;
+    background-size: cover;
+    border-radius: 1.5rem;
+    width: auto;
+    padding: 1rem;
+    margin: 0;
+    max-width: 35.5rem;
+}
+
+.foto_ifrn_cnat{
+    text-align: center;
+    background-color: #2D567E;
+    border-radius: 1.5rem;
+    align-self: stretch;
+    width: 360px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.foto_ifrn_cnat img{
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    display: block;
+    object-fit: cover;
+}
+/* -------------- */
+
+
+/* CONTATOS.HTML */
+
+/* Bloco dos contatos */
+.bloco_contatos{
+    background-color: white;
+    border-radius: 1.5rem;
+    color: #ff8400;
+    margin-top: 6rem;
+    max-width: 35rem;
+    margin: 6rem auto 13rem auto;
+    padding: 1rem;
+    padding-top: 0.5rem;
+}
+
+#paragrafo_contatos{
+    text-align: left;
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+ul li a:link{
+  color: #007bff;
+}
+
+ul li a:visited{
+  color: #cc6900;
+}
+
+ul li a:hover{
+  color: #ff8400;
+}
+
+ul li{
+    color: #1e93b9;
+}
+/* -------------- */
