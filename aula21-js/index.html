@@ -32,8 +32,38 @@
         console.log("OLÁ MUNDO NO CONSOLE!");
         document.getElementById("olamundo").innerHTML = "OLÁ MUNDO NO getElementById";
         // é mais indicado usar o getElementById do que o document.write
+    </script>
+    <h2>VARIÁVEIS</h2>
+    <script>
+        let num = 5;
+        let numdecimal = 54.87;
+        let curso = "INFOWEB";
+        let booleano = true;
 
-        
+        document.write("<h2>OPERADORES ARITMÉTICOS</h2>");
+        console.log(54+98);
+        console.log(54-98);
+        console.log(54*98);
+        console.log(54/98);
+        let a = 87;
+        console.log(a++); // incremento: a + 1
+        console.log(a);
+        // se o "++" for antes: o valor incrementado já é mostrado, caso contrário, é mostrado depois
+        // também tem o decremento "--"
+    </script>
+
+    <label>NUM1: <input type="text" id="num1" /></label>
+    <label>NUM2: <input type="text" id="num2" /></label>
+    <button id="somar">SOMAR</button>
+    <p id="resultado"></p>
+    <script>
+        const somar = document.querySelector("#somar"); // diferente do getElementById,
+        // é necessário colocar o "#"
+        somar.addEventListener("click", function(e){ // evento do click
+            let num1 = document.querySelector("#num1").value;
+            let num2 = document.querySelector("#num2").value;
+            document.getElementById("resultado").innerHTML = parseInt(num1) + parseInt(num2);
+        })
     </script>
 </body>
 </html>
