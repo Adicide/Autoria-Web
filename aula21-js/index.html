@@ -14,13 +14,14 @@
         <li>Usado para dar comportamento, INTERATIVIDADE!</li>
         <li>Exemplos de uso: modal, janela de mensagem, correção de form, galeria de fotos...</li> 
     </ul>
+    <p id="olamundo"></p>
     <script>
-        alert("OLÁ MUNDO!");
-        let minora = window.confirm("Hoje tem aula de Minora?");
-        document.write("<p>" + minora + "</p>"); // document.write escreve no HTML
+        // alert("OLÁ MUNDO!");
+        // let minora = window.confirm("Hoje tem aula de Minora?");
+        // document.write("<p>" + minora + "</p>"); // document.write escreve no HTML
 
-        let nome = window.prompt("Qual seu nome?");
-        document.write("<p>" + nome + "</p>");
+        // let nome = window.prompt("Qual seu nome?");
+        // document.write("<p>" + nome + "</p>");
 
         // 3 janelas (chatas, não use!)
         // alert: é apenas para mensagem
@@ -29,6 +30,10 @@
 
         document.write("OLÁ MUNDO NO document.write!");
         console.log("OLÁ MUNDO NO CONSOLE!");
+        document.getElementById("olamundo").innerHTML = "OLÁ MUNDO NO getElementById";
+        // é mais indicado usar o getElementById do que o document.write
+
+        
     </script>
 </body>
 </html>
