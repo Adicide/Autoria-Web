@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>N1: <input type="text" id="n1"></label> <br>
+    <label>N2: <input type="text" id="n2"></label>
+    <button id="dobro">DOBRO</button>
+    <p id="resultado"></p>
+    <script>
+        // SÓ PODE FAZER O JS DEPOIS DO HTML, porque vai usar o que foi criado no html
+        // alert('OLÁ MUNDO'); janela de alerta - não usar porque é chata!!!
+        document.write("OLÁ MUNDO COM WRITE!"); // não usar pq é antiga!
+        console.log("OLÁ MUNDO NO CONSOLE!"); // ai sim!! é a forma PROFISSIONAL DE ENVIO DE MENSAGEM
+        document.getElementById("resultado").innerHTML = "OLÁ MUNDO COM innerHTML";
+        // tambem é indicado! inner insere um html dentro da marcação com id 'resultado'
+
+        const botao = document.getElementById('dobro');
+        // pegando a marcação de button que id 'dobro' 
+
+        botao.addEventListener("click", function(e){
+            // crio um evento de click no botão 
+            const n1 = document.getElementById("n1").value;
+            const n2 = document.getElementById("n2").value;
+            document.getElementById("resultado").innerHTML = (n1 * n2);
+        })
+    </script>
+</body>
+</html>

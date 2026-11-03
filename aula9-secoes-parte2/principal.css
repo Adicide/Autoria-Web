@@ -1,0 +1,18 @@
+/* 
+representação da class é "."
+representação dos id's é com "#"
+é possível usar apenas ".borda" ou "div.borda", porém são diferentes (o 1º é mais amplo, enquanto o 2º é mais restrito)
+
+*/
+section div{
+    padding: 2rem;
+}
+div.borda{
+    border: 1px solid black;
+}
+div.resenha{
+    background-color: aquamarine;
+}
+section#toguro{
+    text-align: center;
+}

@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
+}
+
+body { 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: black;
+}
+
+/* SEÇÃO DO HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right, #A12FFD, #1DB5FD);
+    color: white;
+}
+
+#titulos {
+    margin: 1rem;
+}
+
+#titulos h2 {
+    font-weight: lighter;
+}
+
+nav { 
+    margin-right: 1.5rem;
+}
+
+li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+li a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    margin: 0.75rem;
+    text-align: center;
+    padding: 1rem 2rem;
+    background-color: rgba(221, 221, 221, 0.308);
+}
+/*  */
+
+/* SEÇÃO DO MAIN */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    flex: 1;
+    color: white
+}
+
+section {
+    background-color: rgb(0, 23, 73);
+}
+
+#modalidades {
+    display: flex;
+    margin: 0;
+    padding: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: center;
+    width: 59rem;
+}
+
+#modalidades div {
+    background-color: rgba(138, 138, 138, 0.65);
+    margin: 2rem;
+    padding: 4rem 2rem;
+    width: 15rem;
+    text-align: center;
+}
+
+#busca_e_calendario {
+    margin: 2rem;
+    padding: 2rem;
+    height: 42.67825rem;
+    border-radius: 2rem;
+}
+
+#busca_e_calendario form {
+    margin-bottom: 5rem;
+}
+
+form input {
+    background-color: rgb(138, 138, 138);
+    height: 2.5rem;
+    width: 17.0215rem;
+}
+
+#busca_e_calendario table {
+    background-color: black;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+th:nth-child(1), td:nth-child(1) {
+    color: red;
+}
+
+table td {
+    padding: 0.5rem;
+}
+/*  */
+
+/* SEÇÃO DO FOOTER */
+footer {
+    background-image: linear-gradient(to right, #A12FFD, #1DB5FD);
+    color: white;
+    font-size: larger;
+    text-align: center;
+    padding: 1.5rem;
+}
+/*  */

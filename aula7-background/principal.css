@@ -1,0 +1,40 @@
+body{
+    /* background-image: url(bg-tile.png); */
+
+    /* uma imagem de background será SEMPRE DECORATIVA,
+    isto é, não será INFORMACIONAL,
+    para imagens informacionais é necessário usar a marcação de IMG no HTML */
+
+    /* OBS: Imagem informacional pode ser descrita para acessiblidade. Já a decorativa, não. */
+
+    /* Posso aplicar background imagem em QUALQUER MARCAÇÃO! */
+    background-image: url(bg-marca.png);
+    background-repeat: repeat-y;
+    background-position: right; 
+    /* repetição: x é eixo x, horizontal. y é eixo y, vertical */
+
+    /* posição da imagem de plano de fundo: left, right, center ou um valor*/
+    
+    margin: 0;
+}
+h1{
+    margin: 0; /* ESPAÇAMENTO EXTERNO */
+    background-image: url(background.png);
+    background-repeat: no-repeat; /* Define a repetição da imagem */
+    background-size: cover; 
+    /* size: cuidado porque aqui vc pode distorcer a imagem */
+    text-align: center; /* Alinha o texto */
+    padding: 5rem; /* ESPAÇAMENTO INTERNO */
+}
+h1 a{ /* formata o âncora que está dentro do h1 */
+    color: white;
+    text-decoration: none;
+}
+a:hover{ /* SUBCLASSE DO CSS - EFEITO DE 'PASSAR O MOUSE' */
+    background-color: rgb(216, 246, 246);
+}
+/* 
+a:link => Ainda não clicou o link
+a:active => Quando está clicando no link
+a:visited => Já clicou no link (Padrão = Roxo)
+*/

@@ -1,0 +1,157 @@
+body{
+    font-family: 'Montserrat', sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-image: url(images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Título do cabeçalho */
+.titulo_infoweb{
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.titulo_infoweb a{
+    color: white;
+    text-decoration: none;
+}
+
+.titulo_infoweb a:hover{
+    color: #d1d1d1;
+    text-decoration: none;
+}
+
+.titulo_infoweb a:visited{
+    color: white;
+    text-decoration: none;
+}
+/*  */
+
+header nav{
+    background-color: rgba(46, 46, 46, 0.65);
+    background-size: auto;
+    margin: 1rem 0;
+    padding: 0.5rem;
+}
+
+/* Lista do menu (header nav ol li) */
+.lista_menu{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    padding: 0;
+}
+
+.lista_menu a{
+    color: rgb(179, 179, 179);
+    text-decoration: none;
+}
+
+.lista_menu a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.lista_menu a:visited{
+    color: rgb(179, 179, 179);
+    text-decoration: none;
+}
+/*  */
+
+ol li{
+    margin: 0 1rem;     
+}
+
+/* SEÇÃO DO MAIN */
+main{
+    align-items: center;
+    justify-content: center;
+}
+
+.blocos{
+    margin: 1rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.grupo-containers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+.container{
+    width: 20rem;
+    height: 33rem;
+    margin: 0.5rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background-image: url(images/bg-boxes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container h3{
+    font-size: 2.5rem;
+}
+
+.apresentacao{
+    margin: 1rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.apresentacao p{
+    margin: 0 auto;
+    max-width: 63.5rem;
+    padding: 1rem;
+    text-align: center;
+}
+/* SEÇÃO DO MAIN */
+
+/* SEÇÃO DO FOOTER */
+footer{
+    background-image: url(images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 7rem;
+    padding: 0.25rem;
+}
+
+footer nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-right: 2rem;
+}
+
+footer nav ul li{
+    list-style-type: none;
+}
+
+.icones_footer{
+    margin: 0.5rem;
+}
+/* SEÇÃO DO FOOTER */

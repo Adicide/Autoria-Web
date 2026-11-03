@@ -1,0 +1,46 @@
+body{
+    background-image: url(images/5590457.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Montserrat";
+    padding: 0;
+}
+
+h1{
+    color: green;
+    text-align: center;
+    background-color: white;
+    border-radius: 16px;
+    padding: 1rem;
+    width: 27rem;
+    margin: auto;
+}
+
+li{
+    list-style: square;
+}
+
+.bloco_branco{
+    background-color: white;
+    border-radius: 16px;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    width: 25rem;
+}
+
+.bloco_azul{
+    background-color: blue;
+    color: white;
+    border-radius: 16px;
+    padding: 1rem 2rem;
+    width: 23rem;
+}
+
+.bloco_verde{
+    background: green;
+    color: white;
+    border-radius: 16px;
+    padding: 1rem;
+    width: 24.5rem;
+}

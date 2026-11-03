@@ -1,0 +1,317 @@
+body{
+    background-image: url(images/Foto\ Natal\ Ponte.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #2D567E;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+header h1{
+    text-align: center;
+    background-color: white;
+    margin-right: auto;
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+}
+
+header h1 a{
+    text-decoration: none;
+    text-align: top;
+}
+
+header h1 a:link{
+    color: #007bff;
+}
+
+header h1 a:hover{
+    color: #ff8400;
+}
+
+header h1 a:visited{
+    color: #2B87A7;
+}
+
+ol li a:link{
+    color: #007bff;
+    text-decoration: none;
+}
+
+ol li a:hover{
+    color: #ff8400;
+}
+
+ol li a:visited{
+    color: #2B87A7;
+}
+
+ol li{
+    display: inline-block;
+}
+
+ol li a{
+    background-color: white;
+    display: flex;
+    margin: 0.6rem;
+    margin-right: 1.5rem;
+    padding: 0.7rem 0.9rem;
+    border-radius: 2rem;
+}
+
+/* Saudações e introdução à página */
+.paragrafo_introducao{ /* Bloco branco de introdução */
+    font-style: bold;
+    font-size: 1.1rem;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    background-size: auto;
+    max-width: 44.5rem;
+    color: #ff8400;
+    border-radius: 1.5rem;
+    margin: 2rem auto;
+    margin-top: auto;
+    padding: 1rem;
+}
+
+#texto_introducao{
+    text-align: left;
+}
+
+#simbolo_devopsdays{
+    display: block;
+    max-width: 480px;
+    border-radius: 20px;
+    margin: 2rem auto;
+    margin-top: 5rem;
+    margin-right: auto;
+}
+/* -------------- */
+
+/* Conjunto dos blocos azuis */
+.conjunto_blocos{
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 4.5rem;
+    justify-content: center;
+}
+/* -------------- */
+
+/* Bloco "O que são os DevOpsDays?" */
+.sobre_o_evento{  /* Bloco azul */
+    background-color: #2D567E;
+    background-size: cover;
+    border-radius: 1.5rem;
+    width: auto;
+    max-width: 17rem;
+    /* margin-left: 17.5rem; */
+    padding: 0.1rem 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#o_que_e{ /* Título h2 "O que são os DevOpsDays? */
+    color: white;
+    background-color: #ff8400;
+    background-size: cover;
+    border-radius: 1.5rem;
+    width: auto;
+    padding: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+#paragrafos_bloco1{
+    text-align: left;
+    background-color: white;
+    background-size: cover;
+    border-radius: 1.5rem;
+    padding: 1rem;
+}
+/* -------------- */
+
+/* Bloco "DevOpsDays 2026 - Natal*/
+.edição_2026_em_natal{  /* Bloco azul */
+    background-color: #2D567E;
+    background-size: cover;
+    border-radius: 1.5rem;
+    width: auto;
+    max-width: 17rem;
+    margin-left: 6rem;
+    padding: 0.1rem 1.5rem;
+    padding-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#devopsdays_natal{ /* Título h2 "DevOpsDays 2026 - Natal */
+    color: white;
+    background-color: #ff8400;
+    background-size: cover;
+    border-radius: 1.5rem;
+    width: auto;
+    padding: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+#paragrafos_bloco2{
+    text-align: left;
+    background-color: white;
+    background-size: cover;
+    border-radius: 1.5rem;
+    padding: 1rem;
+}
+/* -------------- */
+
+/* Rodapé */
+.rodape{ /* Bloco do rodapé */
+    color: white;
+    background-color: #ff8400;
+    background-position: bottom;
+    background-size: cover;
+    width: auto;
+    min-height: 100%;
+    margin: 0; 
+    margin-top: auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+#nome_bold{
+    color: #007bff;
+}
+/* -------------- */
+
+
+/* INFORMAÇÕES.HTML */
+
+/* Bloco da localização */
+.container_localizacao{
+    margin-top: 6rem;
+    margin-bottom: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloco_localizacao{
+    text-align: left;
+    color: white;
+    background-color: #2D567E;
+    background-size: cover;
+    border-radius: 1.5rem;
+    width: auto;
+    max-width: 35rem;
+    padding: 1rem;
+    padding-top: 0.5rem;
+}
+
+#titulo_bloco_localizacao{
+    background-color: #ff8400;
+    background-size: cover;
+    border-radius: 1.5rem;
+    width: auto;
+    padding: 1rem;
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    max-width: 20rem;
+}
+
+.informacoes_do_bloco_localizacao{ /* Bloco branco interno com as informações*/
+    color: black;
+    background-color: white;
+    background-size: cover;
+    border-radius: 1.5rem;
+    width: auto;
+    padding: 1rem;
+    margin: 0;
+    max-width: 35.5rem;
+}
+
+.foto_ifrn_cnat{
+    text-align: center;
+    background-color: #2D567E;
+    border-radius: 1.5rem;
+    align-self: stretch;
+    width: 360px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.foto_ifrn_cnat img{
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    display: block;
+    object-fit: cover;
+}
+/* -------------- */
+
+
+/* CONTATOS.HTML */
+
+/* Bloco dos contatos */
+.bloco_contatos{
+    background-color: white;
+    border-radius: 1.5rem;
+    color: #ff8400;
+    margin-top: 6rem;
+    max-width: 35rem;
+    margin: 6rem auto 13rem auto;
+    padding: 1rem;
+    padding-top: 0.5rem;
+}
+
+#paragrafo_contatos{
+    text-align: left;
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+ul li a:link{
+  color: #007bff;
+}
+
+ul li a:visited{
+  color: #cc6900;
+}
+
+ul li a:hover{
+  color: #ff8400;
+}
+
+ul li{
+    color: #1e93b9;
+}
+/* -------------- */
