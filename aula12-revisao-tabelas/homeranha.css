@@ -1,0 +1,38 @@
+table{
+    background-color: rgb(201, 218, 255);
+    border-collapse: collapse;
+    /* 
+    atributo específico para table 
+    tirar os espaçamentos entre as células
+    */
+}
+
+table tr:nth-child(odd){
+    /* 
+    nth - significa enésimo filho
+    odd - ímpares
+    even - pares 
+    */
+    background-color: rgb(232, 232, 232);
+}
+
+table{
+    text-align: center;
+}
+
+table tr{
+    border-bottom: 1px solid black;
+}
+
+table th{ 
+    padding: 0.5rem;
+}
+
+table td{
+    padding: 1rem;
+}
+
+table td:nth-child(2){
+    font-weight: bold;
+    /* nesse caso, se aplica ao 2° td de cada tr. */
+}

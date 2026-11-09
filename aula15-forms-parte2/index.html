@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        form{
+            border: 1px solid black;
+            margin: 2rem auto;
+            padding: 2rem;
+            width: 20rem;
+        }
+        label[for]{
+            /* selecionar apenas as labels que tem o 'for' definido,
+            isto é, as labels usadas com o input 'radio' não serão
+            diagramadas porque não precisam */
+            background-color: aqua;
+            display: inline-block;
+            width: 7rem;
+            vertical-align: top;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Formulários</h1>
+
+    <h2>CONTATO</h2>
+    <form action="">
+        <label for="nome">Nome: </label>
+        <input type="text" id="nome" value="Victor Carvalho" required disabled placeholder="Digite seu nome"> <br>
+        <!-- 
+        'placeholder' é um rótulo dentro do input
+        'disabled' desativa o componente
+        'required' torna obrigatório o campo
+        'value' é um atributo importante para a função de edição de dados,
+        por exemplo quando vamos atualizar os dados do cadastro
+        -->
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email"> <br>
+
+        <label for="motivo">Motivo: </label>
+        <select id="motivo">
+            <option value="reclamacao">Reclamação</option>
+            <option value="elogio" selected>Elogio</option>
+            <option value="sugestao">Sugestão</option>
+        </select> <br>
+        <!-- 
+        COMBOBOX
+        Componente que permite juntar vários itens em um espaço pequeno
+        porém, os usuários precisam clicar 2 vezes para selecionar
+        por isso é usado para um grupo de itens muito similares como
+        lista de estados, meses, anos, dias do mês....
+        'selected' - já deixa uma opção visível
+        -->
+
+        <label for="mensagem">Mensagem: </label>
+        <textarea id="mensagem">O 'value' do textarea é dentro da marcação!</textarea>
+        <!-- 
+        textarea é uma marcação que recebe um texto longo 
+        -->
+        <input type="submit" value="ENVIAR">
+    </form>
+
+    <h2>BUSCA</h2>
+    <form action="">
+        <label for="busca">Busca: </label>
+        <input type="search" id="busca"> <br>
+        <!-- Há um input do tipo pesquisa, é similar ao text visualmente -->
+        <input type="submit" value="PESQUISAR">
+    </form>
+    <!-- 
+    uma página pode ter vários formulários: login, cadastro, enquete, busca...
+    cada um deve ter um form e input submit
+    -->
+    <h2>ENQUETE</h2>
+    <form action="">
+        <p>Qual sua disciplina favorita?</p>
+        <label><input type="radio" checked name="disc" value="autoria"> Autoria Web</label><br>
+        <label><input type="radio" name="disc" value="prog"> Programação</label><br>
+        <label><input type="radio" name="disc" value="filosofia"> Filosofia</label><br>
+        <label><input type="radio" name="disc" value="design"> Design</label><br>
+        <!-- 
+        - Os atributos nas marcações não precisam seguir ordem.
+        - O comando 'checked' deixa uma opção marcada
+        - Componente 'radio' que só permite um item selecionado
+        - É necessário colocar o atributo 'name' de todos os itens do grupo
+        iguais
+        -->
+        <input type="submit" value="ENVIAR">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav > ol{
+    /* 
+    O sinal de maior ">" faz uma seleção do elemento que está imediatamente dentro, isto é, filho,
+    logo, apenas o OL que é filho do NAV é formatado
+    */
+    display: flex; /* coloca os itens um ao lado do outro*/
+}
+
+ol > li {
+    position: relative; /* é necessário que o item do menu que tem submenu, abra o seu respectivo */
+    background-color: cadetblue;
+    list-style-type: none;
+    padding: 2rem;
+}
+
+ol ul {
+    opacity: 0; /* o submenu ficará totalmente invisível, por padrão */
+    /* 
+    é possível usar: visibility: hidden, display: none ou opacity
+    */
+    visibility: hidden; /* é para ter visiblity ou display porque o submenu só com opacity
+    continua ocupando o espaço */
+    position: absolute; /* o submenu ficará sobre os elementos */
+    background-color: black;
+    padding: 2rem;
+    z-index: 2; /* para o submenu ficar em cima dos itens, visto que ele é position relative */
+    height: 0;
+}
+
+ul a {
+    color: aliceblue;
+}
+
+ol li:hover ul{
+    /* EFEITO DE MOUSE HOVER COM CSS:
+    quando o usuário passar o mouse no li, o submenu apareçerá
+    */
+    visibility: visible;
+    background-color: rgb(85, 14, 14);
+    opacity: 1;
+    height: 5rem;
+    transition: opacity 1s, background-color 2s; /* o atributo de transition cria uma transição leve dos atributos */
+    /* 
+    - para a transição funcionar, é necessário colocar o valor inicial e o valor do
+    atributo de formatação, assim como o tempo de transição em segundos.
+    - não podemos colocar mais de um atributo 'transition' neste bloco de formatação */
+}
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 1280px) {
+    /* 
+    SE a resolução do dispositivo do usuário for MENOR que 1280
+    aplique as formatações abaixo: 
+    */
+    body {
+        background-color: aqua;
+    }
+    /* PODE REESCREVER TODO O CSS */
+}
+
+@media screen and (max-width: 850px) {
+    body {
+        background-color: rgb(234, 255, 0);
+    }
+}
