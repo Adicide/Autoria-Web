@@ -11,17 +11,29 @@
             margin: 0 auto; /* é possível centralizar com flex ou com width e margin auto */
             gap: 2rem; /* espaçamento entre os cards */
             padding: 2rem; /* espaçamento interno */
-            display: grid;
+            display: grid; /* display grid permite diagramação com cards mesclados verticalmente */
             grid-template-areas:
             "a b"
             "a c"
-            "d d"
-            ;
+            "d d";
+            /* o "." representa um espaço vazio */
+            /* as áreas não podem ficar distantes, nem em formato de "L" ou */
+            grid-template-columns: 2fr 1fr; 
+            /* Define a largura de cada coluna, recebe os valores de largura
+            das colunas, se forem definidas 3 colunas, devem ser definidos 3 valores.... e 
+            assim sucessivamente.
+            Unidade: rem, em, %, fr...
+            fr = fracionado */
+            grid-template-rows: 10rem 20rem 10rem; /* Define a altura das linhas */
+            /* CUIDADO com a definição de altura de linhas, porque se o conteúdo
+            ultrapassar os valores o texto ficará fora da área
+            */
         }
 
         div>div {
             border: 1px solid gray;
             padding: 2rem;
+            overflow: auto; /* barra de rolagem */
         }
 
         .palestras { grid-area: a; }
@@ -34,16 +46,16 @@
     <!-- div>div*4>p>lorem -->
     <div>
         <div class="palestras">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure in, quas iusto libero autem nihil facere hic fuga architecto modi facilis dolorem impedit at voluptates accusamus quae commodi consequatur enim!</p>
+            <p>A Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure in, quas iusto libero autem nihil facere hic fuga architecto modi facilis dolorem impedit at voluptates accusamus quae commodi consequatur enim!</p>
         </div>
         <div class="palestrantes">
-            <p>Nobis exercitationem consequuntur quos. Nesciunt architecto earum laborum, provident voluptatem quas sapiente optio libero consequatur ad unde aperiam, laudantium fuga ipsum repudiandae velit sit dolor minus labore dolores. Ea, labore.</p>
+            <p>B Nobis exercitationem consequuntur quos. Nesciunt architecto earum laborum, provident voluptatem quas sapiente optio libero consequatur ad unde aperiam, laudantium fuga ipsum repudiandae velit sit dolor minus labore dolores. Ea, labore.</p>
         </div>
         <div class="minicursos">
-            <p>Fugiat dignissimos aliquid illum sequi facilis unde ipsam aspernatur hic, molestias deleniti voluptas quam aut nesciunt tenetur explicabo, dolorem dolore, officiis recusandae ducimus quo voluptates neque assumenda? Neque, cumque distinctio.</p>
+            <p>C Fugiat dignissimos aliquid illum sequi facilis unde ipsam aspernatur hic, molestias deleniti voluptas quam aut nesciunt tenetur explicabo, dolorem dolore, officiis recusandae ducimus quo voluptates neque assumenda? Neque, cumque distinctio.</p>
         </div>
         <div class="exposicoes">
-            <p>Dolorem nesciunt numquam pariatur ab saepe quasi similique accusantium maiores assumenda voluptate facere vel, minus optio magnam alias dolor iste amet fugiat. Ipsam, porro sunt consequuntur esse consectetur qui ut!</p>
+            <p>D Dolorem nesciunt numquam pariatur ab saepe quasi similique accusantium maiores assumenda voluptate facere vel, minus optio magnam alias dolor iste amet fugiat. Ipsam, porro sunt consequuntur esse consectetur qui ut!</p>
         </div>
     </div>
 </body>
