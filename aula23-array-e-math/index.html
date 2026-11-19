@@ -1,11 +1,63 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Array e Math</title>
 </head>
 <body>
-    
+    <h1>Array e Math</h1>
+    <h2>Array</h2>
+    <script>
+        // 
+        let alunos = ["Ravi", "Victor", "Aline", "Lara"]
+        console.log( alunos[0] )
+        console.log(`Como imprimir um item da lista: ${ alunos[1] }`)
+        console.log("Como imprimir um item da lista:" + alunos[1])
+        console.log(`Lista como string ${alunos.toString()}`)
+        console.log(`Comprimento da lista: ${ alunos.length } `)
+        console.log(`O último item: ${ alunos[alunos.length-1]}` )
+        console.log(`Ordenação: ${ alunos.sort()}`)
+        console.log(`Adiciona o item ${alunos.push("Letícia")}`)
+                        //retorna o comprimento
+        console.log(`Lista como string ${alunos.toString()}`)
+        alunos.pop() // REMOVE O ÚLTIMO ITEM
+        console.log(`Lista: ${alunos.join(" | ")}`)
+        alunos.splice(1,0)
+        console.log(`Lista: ${alunos.join(" | ")}`)
+        // recebe 2 parâmetros
+        // 1o parâmetro: a quantidade de item que quer remover
+        // 2o parâmetro: o índice
+    </script>
+    <h2>Math</h2>
+    <script>
+        console.log(Math.round(5,6)) //imprime o valor mais próximo
+        // arredondada para cima: .ceil()
+        // arredondada para baixo: .floor()
+
+        console.log(Math.max(7,8,9,4)) // retorna o maior valor
+        // retorna o menor valor .min()
+
+        console.log(Math.random()) //Retorna um número randômico entre 0 e 1
+        console.log(Math.random() * 10) //Retorna um número randômico entre 0 e 10
+        console.log(Math.floor(Math.random() * 10))
+                // Retorna um número INTEIRO randômico entre 0 e 10
+    </script>
+    <label>Nome: <input type="text" id="nome"></label>
+    <button id="gerar">GERAR</button>
+    <p id="resultado"></p>
+    <script>
+        const gerar = document.querySelector('#gerar')
+        const resultado = document.getElementById("resultado")
+        gerar.addEventListener("click", function(e) {
+            const nome = document.getElementById("nome")
+            let cores = ["blue", "pink", "yellow", "red"]
+            resultado.style.color = cores[Math.floor(Math.random()*4)]
+            // cores[Math.floor(Math.random()*4)]
+            // retorna uma das cores que está na lista
+            resultado.style.fontSize = "2rem"
+            resultado.innerHTML = nomed.value
+        })
+    </script>
 </body>
 </html>
