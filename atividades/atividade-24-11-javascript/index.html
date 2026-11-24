@@ -4,20 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ATIVIDADE JAVASCRIPT - 24 DE NOVEMBRO</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
 </head>
 <body>
 
     <fieldset>
         <form>
             <label for="senha_usuario">
-                Insira sua senha:<input id="senha_usuario" type="password">
+                Insira sua senha: <input id="senha_usuario" type="password"> 
             </label>
 
             <label for="senha_teste">
-                Confirme sua senha:<input id="senha_teste" type="password">
+                Confirme sua senha: <input id="senha_teste" type="password">
             </label>
         </form>
     </fieldset>
     
+    <script>
+        let senhaUsuario = document.getElementById("senha_usuario");
+        let senhaTeste = document.getElementById("senha_teste");
+
+        if (senhaUsuario === senhaTeste) {
+
+            console.log("As duas senhas são iguais!")
+        } else {
+            console.log("ATENÇÃO: as senhas não são iguais.")
+        }
+    </script>
 </body>
 </html>
