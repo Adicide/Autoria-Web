@@ -15,13 +15,31 @@
         }
         
         for (let i = 10; i > 0; i--) {
-            console.log("FOR com decremento " + i);
+            console.log("FOR com decremento: " + i);
         }
 
-        const frutas = ['banana', 'morango', 'goiaba']
-        frutas.forEach(f => {
-            console.log(f)
-        });
+        const frutas = ['banana', 'morango', 'goiaba'];
+        frutas.forEach(f => { // variável "f" representa um item da lista
+            console.log("FOREACH: " + f);
+        })
+
+        for (let i = 0; i < frutas.length; i++) {
+            console.log("FOR: " + frutas[i]);
+        }
+
+        let j = 0;
+        while (j < 10) {
+            console.log("WHILE: " + j);
+            j += 2;
+        }
+    </script>
+    <p id="resultado"></p>
+    <script>
+        let resultado = document.getElementById("resultado");
+        for (let i = 1; i < 7; i++) {
+            resultado.innerHTML += `<span>INFOWEB</span>`;
+            // '+=' é para pegar o valor anterior e adicionar o novo
+        }
     </script>
 </body>
 </html>
