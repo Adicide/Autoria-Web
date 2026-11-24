@@ -10,32 +10,49 @@
             padding: 0;
             box-sizing: border-box;
         }
+        
+        fieldset {
+            padding: 1.5rem;
+            max-width: 20rem;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        button {
+            width: 3.5rem;
+        }
     </style>
 </head>
 <body>
-
     <fieldset>
-        <form>
-            <label for="senha_usuario">
-                Insira sua senha: <input id="senha_usuario" type="password"> 
-            </label>
+        <label for="senha_usuario">
+            Insira sua senha: <input id="senha_usuario" type="password"> 
+        </label>
 
-            <label for="senha_teste">
-                Confirme sua senha: <input id="senha_teste" type="password">
-            </label>
-        </form>
+        <label for="senha_teste">
+            Confirme sua senha: <input id="senha_teste" type="password">
+        </label>
+            
+        <button id="botao_enviar">Enviar</button>
+        <span id="aviso"></span>
     </fieldset>
     
     <script>
         let senhaUsuario = document.getElementById("senha_usuario");
         let senhaTeste = document.getElementById("senha_teste");
-
-        if (senhaUsuario === senhaTeste) {
-
-            console.log("As duas senhas são iguais!")
-        } else {
-            console.log("ATENÇÃO: as senhas não são iguais.")
-        }
+        let botaoEnviar = document.getElementById("botao_enviar"); 
+        
+        botaoEnviar.addEventListener("click", function(e) {
+            if (senhaUsuario.value == senhaTeste.value) {
+                console.log("As duas senhas são iguais!")
+                aviso.innerHTML = "As senhas coincidem."
+            } else {
+                console.log("ATENÇÃO: as senhas não são iguais.")
+                let aviso = document.getElementById("aviso")
+                aviso.innerHTML = "As senhas não coincidem."
+            }
+        })
+        
     </script>
 </body>
 </html>
