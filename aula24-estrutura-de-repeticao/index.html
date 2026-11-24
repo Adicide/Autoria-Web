@@ -33,11 +33,11 @@
             j += 2;
         }
     </script>
-    <p id="resultado"></p>
+    <div style="font-size: 2rem;" id="resultado"></div>
     <script>
         let resultado = document.getElementById("resultado");
         for (let i = 1; i < 7; i++) {
-            resultado.innerHTML += `<span>INFOWEB</span>`;
+            resultado.innerHTML += `<p style="font-size: ${i}rem">INFOWEB</p> `;
             // '+=' é para pegar o valor anterior e adicionar o novo
         }
     </script>
